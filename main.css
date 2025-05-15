@@ -1,0 +1,963 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amarante&family=Bonheur+Royale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amarante&family=Bonheur+Royale&family=Rubik+Vinyl&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Ubuntu:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Mulish:wght@200&family=Nunito:wght@200&family=Rubik:wght@300&family=Zen+Kurenaido&display=swap');
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height:100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: url(image/123Z_2101.w020.n001.948B.p15.948.jpg);
+    background-size: 100%;
+}
+
+
+#header .logo{
+    color:#696969;
+    background-color: #DEB887;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 2em;
+    font-family: 'Rancho', cursive;
+    text-decoration: none;
+    padding: 2px 15px;
+}
+#header .logo:hover{
+    background-color: #DC143C;
+    color:#DC143C;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #FA8072,
+      0 0 82px #FA8072,
+      0 0 92px #FA8072,
+      0 0 102px #FA8072,
+      0 0 151px #FA8072;
+}
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 2px 40px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    text-align: right;
+    z-index: 10000;
+    font-weight: 700;
+    background-color: #333;
+    color: #fff;
+} 
+
+nav {
+    display: inline-block;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    color: #fff;
+    text-align: left;
+    height: 100vh; 
+}
+
+.hero-section p {
+    max-width: 400px;
+}
+
+.image-collage {
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+    justify-content: space-between;
+}
+
+.image-row {
+    display: flex;
+}
+
+.image:hover{
+    transform: scale(1.03);
+    filter:drop-shadow(0 0 10px #333);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.image-row img {
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.para{
+font-weight:1000; 
+font-size: 40px;
+color:yellow;
+font-family: "Bonheur Royale", cursive;
+font-weight: 400;
+font-style: normal;
+}
+
+.about-info{
+font-size: 16px;
+font-family: "Amarante", serif;
+font-weight: 400;
+font-style: normal;
+color:whitesmoke;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid wheat;
+    border-radius: 5px;
+    color: darkred;
+    background-color:#FA8072;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ /* Hover effect */
+ .button:hover {
+    background-color: #DC143C;
+    color: #ffffff;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.head{
+    color:wheat; 
+    text-align: center; 
+    font-size: 40px;
+    font-family: "Rubik Vinyl", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+}
+
+
+
+/* Slide section */
+.slides-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider{
+  width: 1134px;
+  height: 500px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+  
+}
+.slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+    cursor: pointer;
+    
+  }
+  
+  .slide img{
+    width: 1245px;
+    height: 500px;
+  }
+  .first{
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    animation-duration: 25s;
+    background: url('./image/nauto banner.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+.second{
+    background: url('./image/fate long banner.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center
+}
+.third{
+    background: url('./image/Goku banner.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+@keyframes slide {
+    0%{
+        margin-left: 0;
+    }
+    16%{
+        margin-left: 0;
+    }
+    32%{
+        margin-left: -20%;
+    }
+    48%{
+        margin-left: -20%;
+    }
+    64%{
+        margin-left: -40%;
+    }
+    80%{
+        margin-left: -40%;
+    }
+    100%{
+        margin-left: 0;
+    }
+}
+/* Slide section */
+
+
+
+
+
+/* Show section */
+#AllBanners{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#primaryMainContainer{
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns:auto auto;
+}
+#contentBanners{
+    width: 769px;
+}
+
+/* Other Banners  */
+
+/* All shows banners  */
+#MainContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-direction: column;
+
+}
+#Heading-box{
+    display: grid;
+    grid-template-columns: auto auto;
+    border-left: 5px solid red;
+    height: 12%;
+    padding: 0 12px;
+    align-items: center;
+}
+.heading{
+    font-size: 1.6em;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-weight: bold;
+    color:white;
+
+        
+}
+.viewAll {
+    font-family: 'Mulish', sans-serif;
+    position: relative;
+    left: 35%;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 82px;
+    color:white;
+    
+}
+#Banners-container{
+    margin-top: 19px;
+    width: 770px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#Banners-container img:hover{
+    transform: scale(1.03);
+    filter:drop-shadow(0 0 10px #333);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#Banners-container img{
+    width: 217px;
+    border-radius: 5px;
+    margin-right:20px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+
+.Image-Name{
+    position: relative;
+    color: white;
+    width: 217px;
+    padding-right: 30px;
+    
+}
+.ep{
+    background: red;
+    color: white;
+    padding: 2px 12px;
+    border-radius: 3px;
+    position: absolute;
+    display: inline-block;
+    top: 25px;
+    left: 10px;
+    font-size: 0.9em;
+    font-family: 'Ubuntu', sans-serif;
+}
+.comments{
+    background: rgb(46, 46, 46);
+    padding: 2px 8px;
+    border-radius: 3px;
+    position: absolute;
+    top: 300px;
+    left: 10px;
+    font-size: 0.9em;
+    font-family: 'Ubuntu', sans-serif;
+}
+.watch{
+    background: rgb(46, 46, 46);
+    padding: 2px 8px;
+    position: absolute;
+    top: 300px;
+    left: 135px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    font-family: 'Ubuntu', sans-serif;
+}
+.content-type{
+    display: flex;
+    height: 13px;
+    margin: 20px 0 10px 0;
+}
+.action{
+    display: flex;
+    background: rgb(49, 49, 49);
+    border-radius: 17px;
+    padding: 6px 3px;
+    font-size: 1em;
+    font-family: 'Dongle', sans-serif;
+    align-items: center;
+}
+.adventure{
+    display: flex;
+    background: rgb(49, 49, 49);
+    border-radius: 17px;
+    padding: 6px 3px;
+    font-size: 1em;
+    margin-left: 12px;
+    font-family: 'Dongle', sans-serif;
+    align-items: center;
+}
+.show-name{
+    font-size: 1.4em;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+/* Show section */
+
+
+
+/* News section */
+#LatestNews {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-top: 50px;
+}
+#LatestNewsSection{
+    width: 364px;
+    top: 0;
+    float: left;
+}
+.insideLatestNews{
+    width: 364px;
+}
+#Heading-box2{
+    display: grid;
+    grid-template-columns: auto auto;
+    border-left: 5px solid red;
+    padding: 0 12px;
+    align-items: center;
+
+}
+.headingInNews{
+    font-size: 1.6em;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-weight: bold;
+    color:white;
+}
+.viewAllInNews{
+    font-family: 'Mulish', sans-serif;
+    position: relative;
+    left: 35%;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    color:white;
+}
+#LatestNewses{
+    margin-top: 30px;
+}
+#ImageOfNews{
+    margin-top: 16px;
+    width: 364px;
+    position: relative;
+}
+#ImageOfNews img{
+    width: 364px;
+    border-radius: 10px;
+}
+
+.name{
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    font-size: 1.4em;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    color:white;;
+}
+.epInNews{
+    background: red;
+    color: white;
+    padding: 2px 12px;
+    border-radius: 3px;
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    left: 10px;
+    font-size: 0.9em;
+    font-family: 'Ubuntu', sans-serif;
+}
+.watchInNews{
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    background: whitesmoke;
+    padding: 2px 8px;
+    position: absolute;
+    border-radius: 3px;
+    font-size: 0.9em;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* News section */
+
+.show{
+    display: flex !important;
+}
+
+/*responsive*/
+
+@media only screen and (max-width:1132px) {
+
+    .slider{
+        width: 860px;
+    }
+
+
+    #contentBanners{
+        width: 537px;
+        flex-wrap: wrap;
+    }
+    .Image-Name{
+        padding-right: 12px;
+        width: 167px;
+    }
+
+    #ImageOfNews{
+        width: 300px;
+    }
+    #ImageOfNews img{
+        width: 300px;
+    }
+    #Banners-container{
+        width: 537px;
+    }
+    #Banners-container img{
+        width: 167px;
+    }
+
+    .comments{
+        top: 231px;
+    }
+    .watch{
+        width: 53px;
+        top: 231px;
+        left: 91px;
+    }
+    #LatestNews{
+        margin-left: 30px;
+    }
+    #LatestNewsSection{
+        width: 300px;
+    }
+}
+@media only screen and  (max-width:900px){
+   
+    .slider{
+        width: 700px;
+    }
+    .slider img{
+        width: 621px;
+        height: 307px;
+    }
+    #contentBanners{
+        width: 700px;
+        flex-wrap: wrap;
+    }
+    #primaryMainContainer{
+
+        grid-template-columns:auto ;
+        grid-template-rows: auto auto;
+    }
+    #Banners-container{
+        width: 700px;
+    }
+    .Image-Name{
+        padding-right: 12px;
+        width: 163px;
+    }
+}
+
+@media only screen and  (max-width:730px){
+    .slider{
+        width: 540px;
+    }
+    #contentBanners{
+        width: 540px;
+        flex-wrap: wrap;
+    }
+    #Banners-container{
+        width: 540px;
+    }
+}
+@media only screen and  (max-width:550px){
+    .slider{
+        width: 380px;
+        height: 400px;
+    }
+    #contentBanners{
+        width: 380px;
+        flex-wrap: wrap;
+    }#Banners-container{
+        width: 380px;
+    }
+
+    .Image-Name{
+        padding-right: 12px;
+        width: 178px;
+    }
+    #Banners-container img{
+        width: 182px;
+    }
+}
+@media only screen and  (max-width:400px){
+    .slider{
+        width: 290px;
+        height: 250px;
+    }
+    #contentBanners{
+        width: 300px;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    #Banners-container{
+        width: 300px;
+        margin: auto;
+    }
+    .Image-Name{
+        padding-right: 12px;
+        width: 138px;
+    }
+    #Banners-container img{
+        width: 140px;
+    }
+    #Heading-box{
+        font-size: 0.9em;
+    }
+    .comments{
+        top: 195px;
+        font-size: 11px;
+    }
+    .watch{
+        width: 44px;
+        top: 195px;
+        left: 72px;
+        font-size: 11px;
+    }
+    #LatestNews{
+        margin-left: 0px;
+    }
+    #LatestNewsSection{
+        width: 270px;
+    }
+}
+
+@media only screen and  (max-width:310px){
+    #contentBanners{
+        width: 290px;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    #Banners-container{
+        width: 290px;
+        margin: auto;
+    }
+
+    .Image-Name{
+        padding-right: 12px;
+        width: 200px;
+        margin: 0 auto;
+    }
+    #Banners-container img{
+        width: 200px;
+    }
+
+    .comments{
+        top: 283px;
+        font-size: 15px;
+    }
+    .watch{
+        width: 55px;
+        top: 283px;
+        left: 119px;
+        font-size: 15px;
+    }
+    .viewAllInNews{
+        max-width: 83px;
+    }
+}
+
+/* Footer styles */
+.footer {
+background-color:black;
+color: #fff;
+padding: 20px;
+text-align: center;
+font-size: 20px;
+font-family: "Amarante", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+
+        /* Review section styles */
+        .review-section {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            align-items: flex-end;
+            color: whitesmoke;
+            margin-top: 100px;
+        }
+        div.stars {
+            width: 270px;
+            display: inline-block;
+          }
+           
+          input.star { display: none; }
+           
+          label.star {
+            float: right;
+            padding: 10px;
+            font-size: 36px;
+            color: #444;
+            transition: all .2s;
+          }
+           
+          input.star:checked ~ label.star:before {
+            content: '\f005';
+            color: gold;
+            transition: all .25s;
+          }
+           
+          input.star-5:checked ~ label.star:before {
+            color: gold;
+            text-shadow: 0 0 20px #952;
+          }
+           
+          input.star-1:checked ~ label.star:before { color: #F62; }
+           
+          label.star:hover { transform: rotate(-15deg) scale(1.3); }
+           
+          label.star:before {
+            content: '\f006';
+            font-family: FontAwesome;
+          }
+
+        /* Form styles */
+        .review-form {
+            max-width: 400px;
+            margin-top: 50px;
+            max-height: 1000px;
+            height: 500px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-label {
+            font-weight: bold;
+
+        }
+        .form-input {
+            padding-top: 50px;
+            width: 100%;
+            height: 100%;
+            padding: 50px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-button {
+            background-color: darkred;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-button:hover {
+            background-color:  #DC143C;
+        }
+        
+
+/* Responsive styles */
+
+@media only screen and (max-width:1132px) {
+    .slider {
+        width: 860px;
+    }
+    #contentBanners {
+        width: 537px;
+        flex-wrap: wrap;
+    }
+    .Image-Name {
+        padding-right: 12px;
+        width: 167px;
+    }
+    #ImageOfNews {
+        width: 300px;
+    }
+    #ImageOfNews img {
+        width: 300px;
+    }
+    #Banners-container {
+        width: 537px;
+    }
+    #Banners-container img {
+        width: 167px;
+    }
+    .comments {
+        top: 231px;
+    }
+    .watch {
+        width: 53px;
+        top: 231px;
+        left: 91px;
+    }
+    #LatestNews {
+        margin-left: 30px;
+    }
+    #LatestNewsSection {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .slider {
+        width: 700px;
+    }
+    .slider img {
+        width: 621px;
+        height: 307px;
+    }
+    #contentBanners {
+        width: 700px;
+        flex-wrap: wrap;
+    }
+    #primaryMainContainer {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+    #Banners-container {
+        width: 700px;
+    }
+    .Image-Name {
+        padding-right: 12px;
+        width: 163px;
+    }
+}
+
+@media only screen and (max-width:730px) {
+    .slider {
+        width: 540px;
+    }
+    #contentBanners {
+        width: 540px;
+        flex-wrap: wrap;
+    }
+    #Banners-container {
+        width: 540px;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .slider {
+        width: 380px;
+        height: 400px;
+    }
+    #contentBanners {
+        width: 380px;
+        flex-wrap: wrap;
+    }
+    #Banners-container {
+        width: 380px;
+    }
+    .Image-Name {
+        padding-right: 12px;
+        width: 178px;
+    }
+    #Banners-container img {
+        width: 182px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .slider {
+        width: 290px;
+        height: 250px;
+    }
+    #contentBanners {
+        width: 300px;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    #Banners-container {
+        width: 300px;
+        margin: auto;
+    }
+    .Image-Name {
+        padding-right: 12px;
+        width: 138px;
+    }
+    #Banners-container img {
+        width: 140px;
+    }
+    #Heading-box {
+        font-size: 0.9em;
+    }
+    .comments {
+        top: 195px;
+        font-size: 11px;
+    }
+    .watch {
+        width: 44px;
+        top: 195px;
+        left: 72px;
+        font-size: 11px;
+    }
+    #LatestNews {
+        margin-left: 0px;
+    }
+    #LatestNewsSection {
+        width: 270px;
+    }
+}
+
+@media only screen and (max-width:310px) {
+    #contentBanners {
+        width: 290px;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    #Banners-container {
+        width: 290px;
+        margin: auto;
+    }
+    .Image-Name {
+        padding-right: 12px;
+        width: 200px;
+        margin: 0 auto;
+    }
+    #Banners-container img {
+        width: 200px;
+    }
+    .comments {
+        top: 283px;
+        font-size: 15px;
+    }
+    .watch {
+        width: 55px;
+        top: 283px;
+        left: 119px;
+        font-size: 15px;
+    }
+    .viewAllInNews {
+        max-width: 83px;
+    }
+}
+
+
+
