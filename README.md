@@ -3,6 +3,7 @@
 
 AnimeVisage is a responsive web-based image gallery showcasing popular anime series including Naruto, DeathNote, One Piece, and Dragon Ball Super. It features a clean, stylish interface with hover effects and smooth navigation to provide an enjoyable browsing experience for anime fans.
 
+
 This project was lovingly created to celebrate my brother’s passion for anime and to bring his favorite worlds to life through a visual gallery.
 
 ---
@@ -48,6 +49,8 @@ This project was lovingly created to celebrate my brother’s passion for anime 
 ![Screenshot 2025-05-16 021309](https://github.com/user-attachments/assets/ea6d98ce-35a3-4240-bfee-c9e901426035)
 ![Screenshot 2025-05-16 021318](https://github.com/user-attachments/assets/e97737e4-32d9-4de0-9ebf-5076fe69a628)
 ![Screenshot 2025-05-16 021355](https://github.com/user-attachments/assets/ab6139f2-9fa2-4345-aa45-f419275ed692)
+
+---
 
 ## Credits
 
